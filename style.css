@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    position: relative;
+    background: rgb(65, 174, 171);
+}
+
+/* Global Css */
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    background: #2d4c50;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .3);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 1rem;
+}
+
+.navbar .logo{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+#search-input{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+#search-btn{
+    padding: 10px 20px;
+    background: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#blog-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 280px;
+    border: 1px solid #2d4c50;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    background: #fff;
+}
+
+.blog-card:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2{
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.blog-card p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+@media(max-width: 500px){
+    nav{
+        padding: 0 20px;
+    }
+    .navbar .logo{
+        font-size: 1.8rem;
+    }
+    #search-input{
+        width: 150px;
+        padding: 10px 10px;
+    }
+    .blog-card{
+        width: 100%;
+    }
+}
